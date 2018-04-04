@@ -1,5 +1,5 @@
 {
   "name": "test",
-  "inject": "test.js",
-  "uninstall": "delet.js"
+  "inject": "delet.js",
+  "uninstall": "rmtest.js"
 }
