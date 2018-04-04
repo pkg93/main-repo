@@ -11,7 +11,6 @@ try {
   console.log("[coloursplash93] Injected <style> into <head>!");
   css = localStorage["coloursplash93.css"];
   if (css === undefined) {
-    localStorage["coloursplash93.css"] = "/* Write your CSS here, and then run coloursplash93 again! */\n\n";
     throw new Error("No CSS found.");
   } else {
     cssTag.innerHTML = css;
@@ -28,11 +27,14 @@ le._apps.coloursplash93 = {
     $log("Refreshing...");
     css = localStorage["coloursplash93.css"];
     if (css === undefined) {
-      $log("ERROR: No css found.");
+      css = localStorage["coloursplash93.css"];
+      $alert.error("ERROR: No CSS found. Created coloursplash93.css in /a/.", function () {});
+      localStorage["coloursplash93.css"] = "/*insert cool css here*/\n\n";
     } else {
       document.getElementById("coloursplash93").innerHTML = css;
-      $log("Done!");
+      $alert.info("Done!", function(){});
     }
   },
-  icon: "//files.gamebanana.com/img/ico/sprays/5a177c37e9c06.png"
+  icon: "//files.gamebanana.com/img/ico/sprays/5a177c37e9c06.png",
+  name: "7.8/10 too many toads"
 };
