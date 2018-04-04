@@ -3,6 +3,8 @@
   "motd": "Hello, World!",
   "packages": [
     "wget93",
-    "helloworld"
+    "helloworld",
+    "test",
+    "colorsplash93"
   ]
 }
