@@ -1,6 +1,6 @@
 {
   "name": "pkg93 Default Repo",
-  "motd": "Hello, World!",
+  "msg": "Hello, World!",
   "packages": [
     "wget93",
     "helloworld",
