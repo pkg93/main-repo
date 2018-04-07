@@ -1,0 +1,4 @@
+{
+  "name": "mysupercoolexamplepackage",
+  "inject": "mysupercoolexamplepackage.js"
+}

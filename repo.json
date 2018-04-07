@@ -4,6 +4,7 @@
   "packages": [
     "wget93",
     "helloworld",
-    "coloursplash93"
+    "coloursplash93",
+    "mysupercoolexamplepackage"
   ]
 }
