@@ -8,3 +8,5 @@ To add your package, you need to...
 3. Put the folder in the forked repository.
 4. Add the folder to the array named "packages" inside of repo.json
 5. Pull request.
+
+An example PR is avaliable [here](https://github.com/1024x2/pkg93-mainrepo/pull/1).
