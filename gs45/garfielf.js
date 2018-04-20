@@ -162,7 +162,7 @@ le._apps.gs45 = {
   },
   name: "Garfield System 45",
   icon: "//img00.deviantart.net/2b32/i/2015/283/2/9/famiclone__garfield_system_45_by_derekautistafmf5988-d9cn1u0.png",
-  categories: "Emulator",
+  categories: "Emulator;Game",
   accept: ".nes"
 };
 

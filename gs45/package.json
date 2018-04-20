@@ -1,4 +1,5 @@
 {
   "name": "gs45",
+  "description": "A NES emulator.",
   "inject": "garfielf.js"
 }

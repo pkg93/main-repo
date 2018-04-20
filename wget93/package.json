@@ -1,4 +1,5 @@
 {
   "name": "wget93",
+  "description": "wget, now in Windows 93!",
   "inject": "wget93.js"
 }

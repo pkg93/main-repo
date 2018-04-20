@@ -1,4 +1,5 @@
 {
   "name": "helloworld",
+  "description": "Hello, World!",
   "inject": "helloworld.js"
 }
