@@ -1,6 +1,5 @@
 le._apps.gs45 = {
-  exec: function()
-  {
+  exec: function() {
     blobboi = new Blob([`
 <!DOCTYPE html>
 <html>
@@ -49,7 +48,7 @@ le._apps.gs45 = {
     <canvas id="DisplayOutput" width="256" height="240"></canvas>
   </body>
 </html>
-`], { type: 'text/html' });
+`], {type: 'text/html'});
     var gs45 = $window({
       url: URL.createObjectURL(blobboi),
       icon: "//img00.deviantart.net/2b32/i/2015/283/2/9/famiclone__garfield_system_45_by_derekautistafmf5988-d9cn1u0.png",
@@ -59,50 +58,55 @@ le._apps.gs45 = {
       help: "<h1>nes-js</h1>Emulator made by <a href='https://github.com/takahirox'>takahirox</a><br>Ported to Windows 93 by <a href='https://github.com/1024x2'>1024x2</a><br>Icon and Title by <a href='https://derekautistafmf5988.deviantart.com/art/Famiclone-Garfield-System-45-565426440'>DerekAutistaFMF5988</a><br><a href='https://github.com/takahirox/nes-js#default-key-configuration'>Key Mappings</a> | <a href='https://github.com/takahirox/nes-js'>Source Code</a>",
       width: 256,
       height: 242,
-      menu: [
-        {
-          name: "Emulator",
-          items: [
-            {
-              name: "Open ROM...",
-              action: function() {
-                $explorer('a/', {browse: true, explorer: true, onclose: function(ok, file) {
+      menu: [{
+        name: "Emulator",
+        items: [{
+            name: "Open ROM...",
+            action: function() {
+              $explorer('a/', {
+                browse: true,
+                explorer: true,
+                onclose: function(ok, file) {
                   if (ok) {
                     $file.open(file, "DataURL", function(dataurl) {
                       gs45.el.iframe.contentWindow.load(dataurl);
                     });
                   }
-                }});
-              }
-            },
-            {name: "---"},
-            {
-              name: "Start/Reset",
-              action: function() {
-                gs45.el.iframe.contentWindow.start();
-              }
-            },
-            {
-              name: "Stop",
-              action: function() {
-                gs45.el.iframe.contentWindow.stop();
-              }
-            },
-            {name: "---"},
-            {
-              name: "Exit",
-              action: function() {
-                gs45.close();
-              }
+                }
+              });
             }
-          ]
-        }, {
-          name: "Help",
-          items: [
-            {
-              name: "Tested Games",
-              action: function () {
-                $alert.info(`
+          },
+          {
+            name: "---"
+          },
+          {
+            name: "Start/Reset",
+            action: function() {
+              gs45.el.iframe.contentWindow.start();
+            }
+          },
+          {
+            name: "Stop",
+            action: function() {
+              gs45.el.iframe.contentWindow.stop();
+            }
+          },
+          {
+            name: "---"
+          },
+          {
+            name: "Exit",
+            action: function() {
+              gs45.close();
+            }
+          }
+        ]
+      }, {
+        name: "Help",
+        items: [{
+            name: "Tested Games",
+            action: function() {
+              $alert.info(`
 <h1>Tested Games</h1>
 <table>
   <tr style="border: 1px solid black !important;">
@@ -134,30 +138,31 @@ le._apps.gs45 = {
     <td style="border: 1px solid black !important;">Works.</td>
   </tr>
 </table>`);
-              }
-            },
-            {
-              name: "Key Mappings",
-              action: function () {
-                window.open("https://github.com/takahirox/nes-js#default-key-configuration");
-              }
-            },
-            {
-              name: "Source Code",
-              action: function () {
-                window.open("https://github.com/takahirox/nes-js");
-              }
-            },
-            {name: "---"},
-            {
-              name: "About",
-              action: function () {
-                $alert.info("<h1>nes-js</h1>Emulator made by <a href='https://github.com/takahirox'>takahirox</a><br>Ported to Windows 93 by <a href='https://github.com/1024x2'>1024x2</a><br>Icon and Title by <a href='https://derekautistafmf5988.deviantart.com/art/Famiclone-Garfield-System-45-565426440'>DerekAutistaFMF5988</a><br><a href='https://github.com/takahirox/nes-js#default-key-configuration'>Key Mappings</a> | <a href='https://github.com/takahirox/nes-js'>Source Code</a>");
-              }
             }
-          ]
-        }
-      ],
+          },
+          {
+            name: "Key Mappings",
+            action: function() {
+              window.open("https://github.com/takahirox/nes-js#default-key-configuration");
+            }
+          },
+          {
+            name: "Source Code",
+            action: function() {
+              window.open("https://github.com/takahirox/nes-js");
+            }
+          },
+          {
+            name: "---"
+          },
+          {
+            name: "About",
+            action: function() {
+              $alert.info("<h1>nes-js</h1>Emulator made by <a href='https://github.com/takahirox'>takahirox</a><br>Ported to Windows 93 by <a href='https://github.com/1024x2'>1024x2</a><br>Icon and Title by <a href='https://derekautistafmf5988.deviantart.com/art/Famiclone-Garfield-System-45-565426440'>DerekAutistaFMF5988</a><br><a href='https://github.com/takahirox/nes-js#default-key-configuration'>Key Mappings</a> | <a href='https://github.com/takahirox/nes-js'>Source Code</a>");
+            }
+          }
+        ]
+      }],
     });
   },
   name: "Garfield System 45",
