@@ -1,5 +1,6 @@
 # pkg93-mainrepo
-This is pkg93's main repo. If you want to view the actual source code, go [here](https://github.com/1024x2/pkg93). If you want to add a package, continue reading.
+Package submissions are closed.
+~~This is pkg93's main repo. If you want to view the actual source code, go [here](https://github.com/1024x2/pkg93). If you want to add a package, continue reading.~~
 
 ## Adding your package
 To add your package, you need to...
