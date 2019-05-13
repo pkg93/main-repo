@@ -1,0 +1,5 @@
+{
+  "name": "minecraft",
+  "description": "Minecraft Classic for Windows 93: Supports multiplayer, text chat and is completely free!",
+  "inject": "minecraft.js"
+}
